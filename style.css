@@ -1,0 +1,754 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+.cabecera__mail{
+      margin-left: 80px;
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    margin-left: 4%;
+    
+}
+
+.cabecera__titulo {
+    font-size: 1.0rem;
+    width: 100%;
+    margin-left: 4%;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion{
+    display: flex;
+    color: rgba(70, 70, 70, 1);
+    text-align:justify;
+    flex-direction: column;
+    padding: 5px;
+
+    
+}
+.presentacion__contenedor{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.presentacion__foto{
+    width: 98px;
+    height: 98px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.redes{
+    font-weight: bold;
+    display: flex;
+    white-space: nowrap;
+    gap: 15px;   
+}
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi{
+    display: flex;
+    color: rgba(70, 70, 70, 1);
+    text-align:justify;
+    flex-direction: column;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.sobre-mi__firma{
+   display: flex;
+   width: 33%;
+   height: 33%; 
+}
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center; 
+}
+
+.habilidades__lista{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.habilidades__elemento{
+    flex-direction: column;
+    align-items: center;
+}
+.habilidades__nombre{
+   margin-top: 0px;
+   text-align: center;
+   font-weight: bold;
+}
+
+
+/*----------------------- Sección de Aficiones --------------------------------*/
+
+
+
+.aficiones__lista{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);    
+}
+
+.aficiones__elemento{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.aficiones__nombre{
+   margin-top: 0;
+   text-align: center;
+   font-weight: bold;
+   
+}
+
+
+
+/*-------------------------- Sección de Formacion Academica --------------------------------*/
+
+.formacion {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+.formacion__titulo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.formacion__lista{
+    background-color: y;
+}
+.formacion__elemento {
+    
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+}
+.formacion__icono {
+    display: block;
+    margin: 0 auto 10px;
+    width: 20;
+}
+.formacion__nombre {
+    
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.botones_link{
+    display: flex;
+    
+}
+
+.formacion__detalle {
+    font-size: 14px;
+    color:darkturquoise
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex-direction: column;
+    
+}
+.proyectos__titulo{
+    text-align: center;
+}
+
+.proyectos__icono{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+}
+.proyectos__nombre{
+   text-align: left;
+   margin-left: 5%;
+}
+.proyectos__detalle{
+    margin-left: 5%;
+}
+
+.proyectos__link_demo{
+    padding: 10px 12px 14px 10px; 
+    display: flex;
+    width: 90px;
+    height: 20px;
+    margin: 60px;
+    margin-top: 0;
+    background-color:rgba(42, 122, 228, 1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contact-form {
+    background-color: #E3F2FD;
+    padding: 20px;
+    border-radius: 8px;
+    width: 320px;
+    margin: 12%;
+    margin-top: 0%;
+}
+.contact-form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.contact-form p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 20px;
+    text-align:justify;
+}
+.contact-form label {
+    display: block;
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #1976D2;
+    outline: none;
+}
+.contact-form button {
+    background-color: #1976D2;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+}
+.contact-form button:hover {
+    background-color: #1565C0;
+}
+
+/* ______________FOOTER PIE__________*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color:yellow;
+    align-content: center;
+}
+.footer_texto{
+    text-align: center;
+    background-color: blueviolet; 
+}
+
+
+
+.contact__icono{
+    display: none;
+}
+    
+    
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        display: flex;
+    }
+
+    .presentacion{
+        display: flex;
+        color: rgba(70, 70, 70, 1);
+        text-align:justify;
+        flex-direction: row-reverse;
+        padding: 5px;
+        max-width: 100;
+        
+    }
+    .presentacion__foto{
+        width: 138px;
+        height: 138px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+        
+    }
+    
+    .cabecera__mail{
+        margin-right: 10%;
+    }
+    .cabecera__titulo {
+        font-size: 1.5rem;
+        
+    }
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .sobre-mi{
+        display: flex;
+        color: rgba(70, 70, 70, 1);
+        text-align:justify;
+        flex-direction: column;
+        padding: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+    }
+    .sobre-mi__firma{
+       display: flex;
+       width: 17%;
+       height: 27%; 
+    }
+
+    .habilidades{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center; 
+    }
+    
+    .habilidades__lista{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        text-align: left;
+    }
+
+    .habilidades__icono{
+        background-color:white;
+       padding:20% 40% 20% 40%;
+        text-align: left;
+    }
+    .habilidades__nombre{ 
+        text-align: left;
+              
+    }
+
+    .aficiones{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    
+    .aficiones__lista{
+        display: grid;
+        align-content: center;
+        text-align: left;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);    
+    }
+
+    .aficiones__icono{
+        background-color:white;
+        padding:20% 40% 20% 40%;
+        text-align: left;
+    }
+
+    .aficiones__nombre{
+        text-align: left;
+    }
+    
+    
+    .formacion{
+        display: flex;
+        flex-direction: column;
+        gap: 5px; 
+        margin-left: 0%;
+    }
+    .formacion__titulo{
+        display: flex;
+        margin-left: 90%;
+        width: 100%;
+    }
+    
+    .formacion__lista{
+
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        
+    }
+
+    .proyectos__link_demo{
+        padding: 5px 6px 7px 5px; 
+        display: flex;
+        width: 80px;
+        height: 20px;
+        margin: 50px;
+        margin-top: 0;
+        background-color:rgba(42, 122, 228, 1);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    
+
+    
+    /*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contact-form {
+    background-color: #E3F2FD;
+    padding: 20px;
+    border-radius: 8px;
+    width: 650px;
+    margin: 3%;
+    margin-top: 0%;
+}
+.contact-form button {
+    background-color: #1976D2;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 20%;
+}
+
+
+.contact__icono{
+    display: none;
+}
+    
+
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+   
+    .cabecera {
+        display: flex;
+        justify-content: space-between; 
+        
+        
+    }
+    .cabecera_menu{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-right: 0%;
+
+    }
+    .cabecera__mail{
+        font-weight: bold;
+    }
+
+    .navegacion__lista{
+        display: flex;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+       
+        gap: 15px;
+
+     }
+
+    .cabecera__logo {
+        max-width: 80px; /* Ajuste para pantallas pequeñas */
+        margin-left: 4%;
+        
+    } 
+    .presentacion__foto{
+        width: 238px;
+        height: 238px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.0rem;
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+
+    .sobre-mi{
+        display: flex;
+        color: rgba(70, 70, 70, 1);
+        text-align:justify;
+        flex-direction: column;
+        padding: 5px;
+        margin-left: 65px;
+        margin-right: 15px;
+        width: 50%;
+    }
+
+    
+    .habilidades{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        text-align: center; 
+    }
+    
+    .habilidades__lista{
+        display: grid;
+        align-content: center;
+        grid-template-columns: repeat(6, 1fr);
+        width: auto;
+        
+    }
+
+
+    .aficiones__lista{
+        display: grid;
+        align-content: center;
+        grid-template-columns: repeat(6, 1fr);    
+    }
+    
+    .aficiones__elemento{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .aficiones__nombre{
+       margin-top: 0;
+       text-align:left;
+       font-weight: bold;
+       
+    }
+
+
+
+    .formacion {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        text-align: left; 
+       
+        
+    }
+    .formacion__titulo{
+        text-align: center;
+       
+    }
+
+    .container{
+        display: flex;
+        margin-left: 15%;
+        flex-direction: row;
+
+    }
+    .proyectos__titulo{
+        color: rgba(70, 70, 70, 1);
+    }
+    
+    .proyectos__icono{
+        display: flex;
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .descripcion {
+        text-align: left;
+        align-content: center;
+    }
+    .descripcion h3 {
+        font-size: 18px;
+        color: rgba(70, 70, 70, 1);
+        margin: 0%;
+    }
+    .descripcion p {
+        font-size: 14px;
+        color: #666;
+        margin: 5px 0 20px 0;
+    }
+
+    .proyectos__link_demo{
+        margin: 2%;
+        gap: 105px;
+        width: 100PX;
+    }
+
+   
+   .contact__icono{
+      display: flex; 
+      
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        padding: 20PX;
+        align-content: center;
+        margin-top: 5%;
+        background-color:rgba(234, 242, 253, 1);
+        margin-left: 5;
+    }
+
+ .imagen{
+    display: flex;
+    margin-left: 5%;
+    height: 600px;
+    
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #E3F2FD;
+    padding: 10px;
+    border-radius: 8px;
+    width: 600px;
+    height: 100%;
+    margin-left: 3%;
+   
+    
+  }
+
+    .contact-form button {
+        background-color: #1976D2;
+        color: #FFFFFF;
+        padding: 0px;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        width: 130px;
+        height: 30px;
+        margin-left: 3%;
+    }
+
+    .contact-form label {
+        display: block;
+        font-size: 12px;
+        color: #666666;
+        margin-bottom: 5px;
+        margin-left: 3%;
+    }
+
+    .contact-form h1, .contact-form p {
+        margin-left: 3%;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 90%;
+        padding: 9px;
+        margin-bottom: 20px;
+        margin-left: 3%;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        background-color: #FFFFFF;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    
+   
+    .contact-form input:focus, .contact-form textarea:focus {
+        border-color: #1976D2;
+        outline: none;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
